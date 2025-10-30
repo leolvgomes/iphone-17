@@ -3,7 +3,7 @@ function Hero() {
     return (
         <section className="relative h-screen overflow-hidden bg-black">
             <div className="absolute right-0 left-0 z-0 scale-75">
-                <img src="/img/hero.jpg" className="w-full h-full object-cover opacity-90"></img>
+                <img src="/img/hero.jpg" alt="iPhone-17" className="w-full h-full object-cover opacity-90"></img>
                 <div className="absolute inset-0 bg-linear-to-b from-black/5 via-transparent to-black"></div>
             </div>
 
