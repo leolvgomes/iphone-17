@@ -8,5 +8,5 @@ export default defineConfig({
     react(), 
     tailwindcss()
   ],
-  base: '/iphone-17/'
+  base: "/iphone-17/"
 })
