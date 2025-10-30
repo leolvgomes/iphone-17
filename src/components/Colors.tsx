@@ -1,10 +1,13 @@
 import { useState } from 'react';
+import blue from '/img/iphone-blue.jpg'
+import silver from '/img/iphone-silver.jpg'
+import orange from '/img/iphone-orange.jpg'
 
 function Colors() {
     const colors = [
-        { id: 'blue', name: 'Blue Titanium', image: '/img/iphone-blue.jpg', colorClass: 'bg-blue-500' },
-        { id: 'silver', name: 'Natural Titanium', image: '/img/iphone-silver.jpg', colorClass: 'bg-gray-300' },
-        { id: 'orange', name: 'Orange Titanium', image: '/img/iphone-orange.jpg', colorClass: 'bg-orange-500' }
+        { id: 'blue', name: 'Blue Titanium', image: blue, colorClass: 'bg-blue-500' },
+        { id: 'silver', name: 'Natural Titanium', image: silver, colorClass: 'bg-gray-300' },
+        { id: 'orange', name: 'Orange Titanium', image: orange, colorClass: 'bg-orange-500' }
     ];
 
     const models = [
@@ -54,7 +57,7 @@ function Colors() {
                     ))}
                 </div>
 
-                <div className="grid gap-8 mt-20 grid-cols-2" id="models">
+                <div className="grid gap-8 mt-20 md:grid-cols-2" id="models">
                     {models.map((model, index) => (
                         <div key={index} className="bg-linear-to-br from-zinc-900 to-transparent rounded-3xl p-8 border border-zinc-800">
                             <div className="text-4xl mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-smartphone-icon lucide-smartphone"><rect width="14" height="20" x="5" y="2" rx="2" ry="2" /><path d="M12 18h.01" /></svg></div>

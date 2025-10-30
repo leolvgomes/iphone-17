@@ -1,9 +1,11 @@
+import logo from "/img/logo.png"
+
 function NavBar(){
 
     return(
         <nav className="fixed top-0 w-full bg-black/70 backdrop-blur-md z-50">
             <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-center gap-8">
-                <img src="/img/logo.png" alt="logo" className="max-w-5"/>
+                <img src={logo} alt="logo" className="max-w-5"/>
 
                 <a href="#design" className="text-gray-300 hover:text-white transition-all duration-300">Design</a>
                 <a href="#performance" className="text-gray-300 hover:text-white transition-all duration-300">Performance</a>
